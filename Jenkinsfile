@@ -9,7 +9,8 @@ pipeline {
         stage('Build') {
             steps {
                 dir ('mesas') {
-                sh 'mvn -DskipTests clean package'
+                   sh 'mvn -DskipTests clean package'
+                }
             }
         }
         stage('Test') {
